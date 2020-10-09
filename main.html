@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GBUCKS</title>
+    <link rel="icon" href="new_logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="animate.css">
+</head>
+
+<body>
+    <center>
+        <h1 class="card-title text-center" id="bank"><img src="new_logo.png" height="200px" width="200px" style="padding-top: 3px;"><sub><img src="tag.gif" class="img-fluid hoverable" id="tagline"></sub></h1>
+    </center>
+    <div class="container-fluid bg-light">
+        <nav class="navbar navbar-dark bg-dark">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About us</a>
+                    <ul>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Camp Site</a></li>
+                        <li><a href="#"> Mission</a></li>
+                    </ul>
+                </li>
+                <li><a>Products & Services</a>
+                    <ul>
+                        <!-- <li><a href="#">For Entreprenuers</a></li> -->
+                        <li><a href="#">For Indiviuals and Families</a></li>
+                        <li><a href="#">For Corporates</a></li>
+                        <li><a href="#">For Instituitional Investors</a></li>
+                    </ul>
+                    <li><a>Careers</a>
+                        <ul>
+                            <li><a href="#">Our Business</a></li>
+                            <li><a href="#">Our People</a></li>
+                            <li><a href="#">Careers & Opportunities</a></li>
+                            <li><a href="#">Search & Apply</a></li>
+                        </ul>
+                    </li>
+            </ul>
+        </nav>
+        <div class="container-fluid" id="second">
+            <!-- <div class="container-fluid bg-light"> -->
+            <!-- <br> -->
+            <!-- <br> -->
+            <br>
+            <br>
+            <br>
+            <!-- </div> -->
+            <div class="container-fluid">
+                <form class="hoverable">
+                    <fieldset class="scheduler-border" id="display">
+                        <legend class="scheduler-border">
+                            <h4>Account Info</h4>
+                        </legend>
+                        <div class="form-row">
+                            <div class="col">
+                                <h5>Deposit</h5><input type="text" class="form-control" placeholder="Deposit" id="deposit" readonly>
+                            </div>
+                            <div class="col">
+                                <h5>Withdraw</h5><input type="text" class="form-control" placeholder="Withdraw" id="withdraw" readonly>
+                            </div>
+                            <div class="col">
+                                <h5 class="blink">Balance</h5><input type="text" class="form-control" placeholder="Balance" id="bal" readonly>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <br>
+                <form>
+                    <fieldset class="scheduler-border" id="dis2">
+                        <legend class="scheduler-border">
+                            <h4>Customer Details</h4>
+                        </legend>
+                        <div class="form-row">
+                            <div class="col">
+                                <h5>Account Name:</h5><input type="text" class="form-control" placeholder="Deposit" id="deposit" value="GANESH V M">
+                            </div>
+                            <div class="col">
+                                <h5>Account Number</h5><input type="text" class="form-control" placeholder="Withdraw" id="withdraw" value="918007076813">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm">
+                        <h4>Transaction Details</h4>
+                        <br>
+                        <select id="mySelect1">
+                            <option value="Select Type" id="type">Select Type</option>
+                            <option value="deposit" id="depo">Deposit</option>
+                            <option value="withdraw" id="with">Withdraw</option>
+                          </select>
+                        <!-- <input type="checkbox" checked data-toggle="toggle" data-on="Deposit" data-off="Withdraw" data-onstyle="success" data-offstyle="danger" data-width="100" data-height="25" id="transtype"> -->
+                    </div>
+                    <div class="col-sm">
+                        <h4>Transaction Mode</h4>
+                        <br>
+                        <select id="mySelect2">
+                            <option value="select" id="mode">Select_Mode</option>
+                            <option value="cash" id="cash">Cash</option>
+                            <option value="Cheque" id="cheque">Cheque</option>
+                    </select>
+                        <!-- <input type="checkbox" checked data-toggle="toggle" data-on="Cash" data-off="Cheque" data-onstyle="success" data-offstyle="danger" data-width="90" data-height="25" id="transmode"> -->
+                    </div>
+                    <div class="col-sm">
+                        <h4 class="text" id="amountitle">Amount</h4>
+                        <span class="unit">Rs.</span>
+                        <input class="text-center" type="number" id="amount" placeholder="Enter Amount here*">
+                        <br>
+                        <br>
+                        <button class="btn-primary btn btn-m" type="submit" id="submit">Submit</button></div>
+                </div>
+                <br>
+                <br>
+            </div>
+
+            <div class="container bg-info" id="third">
+                <center>
+                    <h2 class="h1 pt-4">Mini -Statement</h2>
+                </center>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- <div class="col-lg-3 col-md-12 mb-4"> -->
+                        <div class="card-body">
+                            <h4 class="card-title mt-1">Deposit</h4>
+                            <hr>
+                            <i class="fas fa-quote-left"></i>
+                            <h5 class="text-capitalize" id="depstat"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card-body">
+                            <h4 class="card-title mt-1">Withdraw</h4>
+                            <hr>
+                            <i class="fas fa-quote-left"></i>
+                            <h5 class="text-capitalize" id="withstat"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer1 -->
+    <div class="container-fluid" id="size">
+        <div class="container text-center text-md-left mt-5 bg-light">
+
+            <div class="row mt-3">
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <h6 class="text-uppercase font-weight-bold">GBUCKS Bank</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 30px;">
+                    <p>Gbucks Bank is a leading global investment bank with a strong and profitable private clients franchise. A leader in Germany and Europe, the Bank is continuously growing in North America, Asia and key emerging markets. With more than
+                        180,000 employees in over 76 countries worldwide.</p>
+
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <h6 class="text-uppercase font-weight-bold">Awards</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 30px;">
+                    <p>
+                        <a href="#!">Best Sub-Custodian India 2019</a>
+                    </p>
+                    <p>
+                        <a href="#!">Best Bank in India 2018</a>
+                    </p>
+                    <p>
+                        <a href="#!">Best Equity House in India</a>
+                    </p>
+                    <p>
+                        <a href="#!">Best Private Bank in India 2018</a>
+                    </p>
+
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!">Open an Account</a>
+                    </p>
+                    <p>
+                        <a href="#!">Privacy Policy</a>
+                    </p>
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> No. 26 - 27, Ground Floor, Raleho Towers, M.G. Road, USA - 960001, CA.</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> ganeshvm768@gmail.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> +91-932-582-3553</p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i>IFSC Code : GBUCKS0797BGL</p>
+
+                    <a class="fb-ic">
+                        <i class="fab fa-facebook-f white-text mr-4"> </i>
+                    </a>
+                    <a class="tw-ic">
+                        <i class="fab fa-twitter white-text mr-4"> </i>
+                    </a>
+                    <a class="gplus-ic">
+                        <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                    </a>
+                    <a class="li-ic">
+                        <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                    </a>
+                    <a class="ins-ic">
+                        <i class="fab fa-instagram white-text"> </i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#"> ganeshvm768</a>
+        </div>
+
+        </footer>
+    </div>
+    <!-- Footer2 -->
+
+    <div class="footer1">
+        <h6><span style="color: rgb(248, 11, 11);">@</span> Developed by Ganesh <span style="color: green;"><i class="fa fa-android" aria-hidden="true"></span></i>
+        </h6>
+    </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
